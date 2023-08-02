@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/vendorform.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="/vendorform" method="POST">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Salutaion</label>
+                            <input  name="sal" type="text" placeholder="MR/MRS" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>full name</label>
+                            <input name="fname" type="text" placeholder="Enter your name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input name="mob" type="number" placeholder="Enter mobile number" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>email</label>
+                            <input name="email" type="email" placeholder="Enter your email" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gen" >
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input name="occ" type="text" placeholder="Enter your ccupation" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Bank Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Bank Name</label>
+                            <input name="bname" type="text" placeholder="Enter bank name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Account Number</label>
+                            <input name="acc_no" type="text" placeholder="Enter you account number" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>IFSC code</label>
+                            <input name="ifsc" type="text" placeholder="Enter IFSC code" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Branch Name</label>
+                            <input name="branch" type="text" placeholder="Enter Branch name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Account Holder Name</label>
+                            <input name="acc_name" type="text" placeholder="Enter A/C holder name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input name="exp" type="date" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Location Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>LONGITUDE</label>
+                            <input name="lon" type="text" placeholder="Enter LONGITUDE">
+                        </div>
+
+                        <div class="input-field">
+                            <label>LATITUDE</label>
+                            <input name="lat" type="text" placeholder="Enter LATITUDE">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Landmark</label>
+                            <input name="lan" type="text" placeholder="Enter nearby landmark" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>space area</label>
+                            <input name="spc" type="text" placeholder="Enter space area">
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Rrequired Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Licence no</label>
+                            <input name="lic" type="text" placeholder="Enter your licence no.">
+                        </div>
+
+                        <div class="input-field">
+                            <label>valid from</label>
+                            <input name="from" type="date" placeholder="valid from">
+                        </div>
+
+                        <div class="input-field">
+                            <label>valid upto</label>
+                            <input name="upto" type="date" placeholder="valid upto" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>GSTIN number</label>
+                            <input name="gstin" type="text" placeholder="Enter your GSTIN number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>PAN number</label>
+                            <input name="pan" type="text" placeholder="Enter your PAN number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Created by</label>
+                            <input name="cre" type="text" placeholder="created" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="vendorform.js"></script>
+</body>
+</html>
